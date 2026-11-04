@@ -1,0 +1,7 @@
+{
+  "name": "@entera/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": { "./registration": "./registration.js" }
+}
