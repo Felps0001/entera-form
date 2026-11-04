@@ -1,6 +1,6 @@
 export const states = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
-export const consentText = 'Autorizo a Entera a utilizar os dados informados para realizar meu cadastro e entrar em contato comigo.';
-export const consentVersion = '1.0';
+export const consentText = 'Autorizo a Eucerin a utilizar os dados informados para realizar meu cadastro e entrar em contato comigo.';
+export const consentVersion = '2.0';
 
 export function validateRegistration(body) {
   const source = body && typeof body === 'object' ? body : {};

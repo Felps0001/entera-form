@@ -2,7 +2,7 @@ import express from 'express';
 import helmet from 'helmet';
 import { rateLimit } from 'express-rate-limit';
 import cors from 'cors';
-import { consentText, consentVersion, validateRegistration } from '@entera/shared/registration';
+import { consentText, consentVersion, validateRegistration } from '@eucerin/shared/registration';
 
 export function createApp({ getCollection }) {
   const app = express();

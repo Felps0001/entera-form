@@ -1,5 +1,5 @@
 {
-  "name": "@entera/backend",
+  "name": "@eucerin/backend",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -9,7 +9,7 @@
     "test": "node --test src/*.test.js"
   },
   "dependencies": {
-    "@entera/shared": "*",
+    "@eucerin/shared": "*",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "express-rate-limit": "^7.5.0",

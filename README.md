@@ -1,6 +1,6 @@
-# Formulário Entera
+# Formulário Eucerin
 
-Formulário responsivo em React, API Node/Express e armazenamento MongoDB. Logo original copiado de `entera-pdfs/public/logo-verde.png`.
+Formulário responsivo em React, API Node/Express e armazenamento MongoDB. Logo Eucerin fornecido em `frontend/public/logo-eucerin.png`.
 
 ## Rodar localmente
 
@@ -25,7 +25,7 @@ Abra http://localhost:5173. O Vite encaminha `/api` para a API na porta 3001. Se
 
 Para executar em terminais separados, use `npm run dev:backend` e `npm run dev:frontend` na raiz. Também é possível entrar em `backend` ou `frontend` e executar `npm run dev` em cada pasta. O arquivo `.env` original foi movido para `backend/.env` preservando os valores.
 
-O padrão de desenvolvimento é `mongodb://127.0.0.1:27017/entera_form`. O nome do banco é definido na própria URI. Para Atlas, use o formato `mongodb+srv://USUARIO:SENHA@CLUSTER/entera_form?retryWrites=true&w=majority` e permita o acesso de rede do servidor. Nunca coloque a URI em variáveis `VITE_*` ou no frontend. `.env` não é versionado.
+O padrão de desenvolvimento é `mongodb://127.0.0.1:27017/eucerin_form`. O nome do banco é definido na própria URI. Para Atlas, use o formato `mongodb+srv://USUARIO:SENHA@CLUSTER/eucerin_form?retryWrites=true&w=majority` e permita o acesso de rede do servidor. Nunca coloque a URI em variáveis `VITE_*` ou no frontend. `.env` não é versionado.
 
 ## Produção
 

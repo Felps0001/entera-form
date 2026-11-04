@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { consentText, states, validateRegistration } from '@entera/shared/registration';
+import { consentText, states, validateRegistration } from '@eucerin/shared/registration';
 import './styles.css';
 
 const initial = { fullName: '', crm: '', state: '', phone: '', email: '', consent: false };
@@ -48,11 +48,11 @@ function App() {
     return <div className="field"><label htmlFor={name}>{label} <span>*</span></label><input id={name} name={name} value={values[name]} onChange={change} placeholder={placeholder} required aria-invalid={!!errors[name]} aria-describedby={errors[name] ? `${name}-error` : undefined} {...extra} />{errors[name] && <small className="field-error" id={`${name}-error`}>{errors[name]}</small>}</div>;
   }
   return <div className="page">
-    <header className="brand"><img src="/logo-entera.png" alt="Entera" width="207" height="59" /></header>
+    <header className="brand"><img src="/logo-eucerin.png" alt="Eucerin" width="481" height="178" /></header>
     <main>
-      <section className="form-card" aria-label="Cadastro Entera">
-        {status === 'success' ? <div className="success" role="status"><div className="success-icon"><Icon type="check" width="32" height="32" /></div><span className="eyebrow">TUDO CERTO</span><h1 id="form-title">É bom ter você por aqui.</h1><p>Seu cadastro foi realizado com sucesso.<br />Obrigado por se conectar com a Entera.</p><button className="secondary" onClick={() => { setValues(initial); setErrors({}); setStatus('idle'); }}>Fazer novo cadastro <Icon type="arrow" /></button></div> : <>
-          <div className="intro"><p>Preencha seus dados para se cadastrar na Entera.</p></div>
+      <section className="form-card" aria-label="Cadastro Eucerin">
+        {status === 'success' ? <div className="success" role="status"><div className="success-icon"><Icon type="check" width="32" height="32" /></div><span className="eyebrow">TUDO CERTO</span><h1 id="form-title">É bom ter você por aqui.</h1><p>Seu cadastro foi realizado com sucesso.<br />Obrigado por se conectar com a Eucerin.</p><button className="secondary" onClick={() => { setValues(initial); setErrors({}); setStatus('idle'); }}>Fazer novo cadastro <Icon type="arrow" /></button></div> : <>
+          <div className="intro"><p>Preencha seus dados para se cadastrar na Eucerin.</p></div>
           <div className="section-heading"><span>Seus dados</span><small>* Campos obrigatórios</small></div>
           <form onSubmit={submit} noValidate>
             <fieldset disabled={status === 'sending'}>
@@ -72,7 +72,7 @@ function App() {
         </>}
       </section>
     </main>
-    <footer><span>ENTERA</span></footer>
+    <footer><span>EUCERIN</span></footer>
   </div>;
 }
 createRoot(document.getElementById('root')).render(<App />);

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createApp } from './app.js';
-import { consentText, validateRegistration } from '@entera/shared/registration';
+import { consentText, validateRegistration } from '@eucerin/shared/registration';
 
 const registration = { fullName: ' Ana Silva ', crm: '123456', state: 'sp', phone: '(11) 99999-1234', email: 'ANA@example.com', consent: true };
 
